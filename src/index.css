@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/***************************************** custom form css start ******************************************/
+
+.form__container {
+  @apply w-11/12 rounded-md bg-slate-300 p-5 shadow-sm shadow-gray-400 dark:bg-slate-400 dark:bg-opacity-75 sm:w-auto;
+}
+
+.input__form {
+  @apply flex flex-col items-center justify-center;
+}
+
+.form__title {
+  @apply mb-3 text-center text-2xl font-bold uppercase text-gray-400 drop-shadow-md dark:text-gray-400;
+}
+
+.form__group {
+  @apply my-1 w-full rounded-sm bg-slate-300 p-1 dark:bg-transparent dark:shadow-sm dark:shadow-white;
+}
+
+.form__label {
+  @apply font-serif text-xs font-bold text-gray-500 dark:text-gray-500;
+}
+
+.form__input {
+  @apply my-0.5 w-full border-b-2 bg-transparent font-serif font-semibold text-gray-600 outline-none autofill:shadow-[inset_0_0_0px_1000px_rgba(0,0,0,0.12)] focus:border-teal-500 dark:text-gray-400 dark:placeholder:text-gray-300 dark:autofill:rounded;
+}
+
+.form__group__double {
+  @apply flex w-full gap-2 rounded-sm bg-slate-300 p-1 dark:bg-transparent dark:shadow-sm dark:shadow-white;
+}
+
+.form__group__double__input {
+  @apply w-full border-b-2 bg-transparent font-serif font-semibold text-gray-600 outline-none autofill:shadow-[inset_0_0_0px_1000px_rgba(0,0,0,0.12)] focus:border-teal-500 dark:text-gray-400 dark:placeholder:text-gray-300 dark:autofill:rounded;
+}
+
+.location__picker {
+  @apply my-1 w-full cursor-pointer rounded-sm bg-slate-300 p-1 dark:bg-transparent dark:shadow-sm dark:shadow-white;
+}
+
+.location__picker__label {
+  @apply form__label mr-2 cursor-pointer;
+}
+
+.location__picker__icon {
+  @apply text-gray-700 dark:text-gray-500;
+}
+
+.btn {
+  @apply rounded-lg px-3 py-1 font-serif font-semibold uppercase;
+}
+.center__button {
+  @apply my-2 flex w-full items-center justify-center;
+}
+.form__submit__btn {
+  @apply relative border-[2px]  border-gray-500 bg-gradient-to-r from-teal-500 to-gray-300 text-gray-700 transition duration-300 ease-in hover:from-gray-300 hover:to-teal-500 hover:text-white disabled:bg-gradient-to-r disabled:from-gray-300 disabled:to-slate-400 disabled:text-slate-500 disabled:hover:text-slate-500 disabled:cursor-not-allowed;
+}
+
+/***************************************** custom form css END ******************************************/
+
+/*********************************************************** error message start ********************************************************** */
+
+.error__wrapper {
+  @apply absolute top-2 z-50 flex h-auto w-11/12 items-center justify-center rounded-md bg-red-400 p-2 dark:bg-opacity-50;
+}
+
+.error__container {
+  @apply flex w-11/12 items-center justify-center;
+}
+.error__message {
+  @apply text-white;
+}
+.error__btn {
+  @apply flex h-7 w-7 cursor-pointer items-center justify-center rounded-full shadow-sm shadow-gray-500 drop-shadow-lg hover:bg-red-300 hover:shadow-sm hover:shadow-gray-700 dark:bg-red-300;
+}
+.error__btn__icon {
+  @apply text-red-600 drop-shadow-lg hover:text-red-500 dark:text-red-800;
+}
+
+/*********************************************************** error message end ********************************************************** */
